@@ -1,0 +1,24 @@
+<div id="login">
+    <!-- <p>
+        <mat-form-field appearance="outline">
+            <mat-label>הכנס שם</mat-label>
+            <input type="text" [(ngModel)]="currentUser.Name" name="n">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>הכנס סיסמא</mat-label>
+            <input type="password" [(ngModel)]="currentUser.Password" name="p">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </p>
+
+    <button mat-flat-button color="accent" (click)="check()">להתחבר</button> -->
+    <input type="text"  placeholder="הכנס שם"[(ngModel)]="currentUser.Name" name="n">
+<input type="password"  placeholder="הכנס סיסמא"[(ngModel)]="currentUser.Password" name="p" >
+<input type="button" value="להתחבר" (click)="check()">
+
+
+</div>
+

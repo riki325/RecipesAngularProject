@@ -1,0 +1,12 @@
+
+<div id="register">
+<form>   
+    <input type="text" placeholder="name" [(ngModel)]="currentUser.Name" name="n"/>
+   <input type="password" placeholder="password" [(ngModel)]="currentUser.Password" name="p"/>
+   <input type="text" placeholder="email" [(ngModel)]="currentUser.Mail" name="m"/>
+   <input type="text" placeholder="adress" [(ngModel)]="currentUser.Address" name="a"/>
+   <input type="button" value="הרשם" (click)="addUser()"/>
+</form>
+<h2 *ngIf="isRegister==1">שם משתמש קיים</h2>
+<h2 *ngIf="isRegister==2"> משתמש קיים</h2>
+</div>
